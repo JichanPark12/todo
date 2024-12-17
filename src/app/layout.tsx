@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const nanum = localFont({
+  src: [
+    {
+      path: "../fonts/NanumSquareB.ttf",
+    },
+    {
+      path: "../fonts/NanumSquareR.ttf",
+    },
+  ],
 });
 
 export const metadata: Metadata = {
@@ -24,10 +25,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${nanum.className} antialiased`}>
+        <div className="max-w-[1200px] mx-auto">{children}</div>
       </body>
     </html>
   );
