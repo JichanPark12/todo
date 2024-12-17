@@ -14,7 +14,7 @@ export default {
         "violet-6": "#7C3AED",
         "violet-1": "#EDE9FE",
         "rose-5": "#F43F5E",
-        "line-3": "#BEF264",
+        "lime-3": "#BEF264",
         "amber-8": "#92400E",
         "slate-9": "#0F172A",
         "slate-8": "#1E293B",
@@ -27,4 +27,10 @@ export default {
     },
   },
   plugins: [],
+  safelist: [
+    {
+      pattern:
+        /^(bg|border|stroke)-(slate-2|rose-5|lime-3|violet-6|white|slate-9)$/,
+    },
+  ],
 } satisfies Config;
