@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
+import Header from "@/components/header/Header";
 
 const nanum = localFont({
   src: [
@@ -26,7 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${nanum.className} antialiased`}>
-        <div className="max-w-[1200px] mx-auto">{children}</div>
+        <div className="pl-[24px] pr-[24px] max-w-[1200px] mx-auto">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );
