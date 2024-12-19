@@ -30,7 +30,7 @@ export default {
   safelist: [
     {
       pattern:
-        /^(bg|border|stroke)-(slate-2|rose-5|lime-3|violet-6|white|slate-9)$/,
+        /^(bg|border|stroke|fill)-(slate-2|rose-5|lime-3|violet-6|white|slate-9)$/,
     },
   ],
 } satisfies Config;
