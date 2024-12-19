@@ -7,7 +7,7 @@ const AddTodo = () => {
     <form action={createTodo} className="flex">
       <TodoInput />
       <div className="ml-[18px]">
-        <Create size="M" fill={false} />
+        <Create size="M" fill={false} isRWD={true} />
       </div>
     </form>
   );

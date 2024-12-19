@@ -20,7 +20,7 @@ const Todo = ({ todo }: Props) => {
     });
   };
   return (
-    <div className="w-full max-w-[588px] h-[50px] rounded-[27px] pl-[12px] pr-[12px] flex items-center border-2 border-slate-9 cursor-pointer">
+    <div className="w-full h-[50px] rounded-[27px] pl-[12px] pr-[12px] flex items-center border-2 border-slate-9 cursor-pointer">
       <div>
         {todo.isCompleted ? (
           <CheckCircleIcon

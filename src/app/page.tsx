@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className=" mt-[24px]">
       <AddTodo />
-      <div className="mt-[40px] flex justify-between gap-[24px]">
+      <div className="mt-[40px] flex justify-between gap-[24px] w-full">
         <TodoListContainer />
       </div>
     </div>

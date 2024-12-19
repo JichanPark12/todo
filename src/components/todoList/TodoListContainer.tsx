@@ -1,6 +1,6 @@
 import { link } from "@/api/link";
 import { SimpleTodo } from "@/types/todo";
-import TodoList from "./todoList";
+import TodoList from "./TodoList";
 
 interface ReduceResult {
   todo: SimpleTodo[];
@@ -29,7 +29,7 @@ const TodoListContainer = async () => {
   );
 
   return (
-    <div className="flex w-full gap-[24px]">
+    <div className="w-full flex flex-col gap-[48px] md:flex md:flex-row md:gap-[24px]">
       <TodoList isCompleted={false} todoList={reduceTodoList.todo} />
       <TodoList isCompleted={true} todoList={reduceTodoList.done} />
     </div>

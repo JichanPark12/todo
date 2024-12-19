@@ -9,7 +9,7 @@ interface Props {
 
 const TodoList = ({ todoList, isCompleted }: Props) => {
   return (
-    <div className="w-full max-w-[588px] flex flex-col gap-[16px]">
+    <div className="w-full md:max-w-[588px] flex flex-col gap-[16px]">
       <div>
         <Image
           src={isCompleted ? "/image/done.png" : "/image/todo.png"}

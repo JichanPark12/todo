@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${nanum.className} antialiased`}>
-        <div className="pl-[24px] pr-[24px] max-w-[1200px] mx-auto">
+        <div className=" max-w-[1250px] mx-auto pl-[16px] pr-[16px] xs:pl-[24px] xs:pr-[24px]">
           <Header />
           {children}
         </div>
