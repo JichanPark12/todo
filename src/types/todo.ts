@@ -1,7 +1,7 @@
 export interface SimpleTodo {
   id: number;
   name: string;
-  isCompleted: number;
+  isCompleted: boolean;
 }
 
 export interface DetailTodo extends SimpleTodo {
