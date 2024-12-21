@@ -10,8 +10,6 @@ export const DynamicInput = ({ value, ...props }: Props) => {
   const [inputValue, setInputValue] = useState(value);
   const spanRef = useRef<HTMLSpanElement>(null);
 
-  console.log(spanRef.current?.getBoundingClientRect().width);
-
   const dynamicWidth = spanRef.current
     ? spanRef.current.getBoundingClientRect().width
     : 0;

@@ -51,7 +51,7 @@ const TodoImage = ({ imageUrl }: Props) => {
 
   return (
     <div
-      className={`${uploadImg ? "" : "border-dashed border-2"} w-[384px] h-[311px]  rounded-2xl border-slate-3 relative flex items-center justify-center`}
+      className={`${uploadImg ? "" : "border-dashed border-2"} md:w-[384px] h-[311px] w-full  rounded-2xl border-slate-3 relative flex items-center justify-center`}
     >
       <input type="text" name="imageUrl" className="hidden" ref={imageUrlRef} />
       {uploadImg ? (

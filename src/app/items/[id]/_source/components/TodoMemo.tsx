@@ -6,7 +6,7 @@ interface Props {
 
 const TodoMemo = ({ memo }: Props) => {
   return (
-    <label className="w-[588px] h-[311px] relative rounded-3xl p-[24px]">
+    <label className="md:w-[588px] w-full h-[311px] relative rounded-3xl p-[24px]">
       <Image
         src={"/image/memo.png"}
         fill={true}
@@ -17,7 +17,7 @@ const TodoMemo = ({ memo }: Props) => {
         <p className="text-base font-bold text-center text-amber-8">Memo</p>
         <textarea
           name="memo"
-          className="mt-[24px] bg-transparent outline-none text-center resize-none w-full text-slate-8"
+          className="custom-scrollbar mt-[24px] bg-transparent outline-none text-center resize-none w-full text-slate-8"
           rows={8}
           defaultValue={memo}
         ></textarea>

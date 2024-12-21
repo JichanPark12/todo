@@ -35,11 +35,11 @@ const DetailTodoContainer = async ({ params }: Props) => {
       className=" mt-[24px] max-w-[996px] w-full mx-auto flex flex-col gap-[24px]"
     >
       <TodoName id={+id} isCompleted={todo.isCompleted} name={todo.name} />
-      <div className="flex gap-[24px] justify-between">
+      <div className="flex gap-[24px] justify-between md:flex-row flex-col">
         <TodoImage imageUrl={todo.imageUrl} />
         <TodoMemo memo={todo.memo} />
       </div>
-      <div className="flex justify-end gap-[16px]">
+      <div className="flex md:justify-end justify-center gap-[16px]">
         <Update fill={false} />
         <Delete id={id} />
       </div>
