@@ -20,7 +20,19 @@ const TodoImage = ({ imageUrl }: Props) => {
     if (!files) return;
 
     const file = files[0];
+    const name = file.name.split(".")[0];
 
+    if (!/^[a-zA-Z]+$/.test(name)) {
+      alert("이미지 이름은 영어로만 이루어져야 합니다.");
+      return;
+    }
+
+    if (!file.type.startsWith("image/")) {
+      alert("이미지 파일만 업로드 가능합니다.");
+      return;
+    }
+
+    console.log(file);
     const formData = new FormData();
     formData.append("image", file);
 
