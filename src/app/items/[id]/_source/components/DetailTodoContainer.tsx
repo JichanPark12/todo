@@ -13,6 +13,8 @@ interface Props {
   params: PromiseParams;
 }
 
+// todo 업데이트 form
+
 const DetailTodoContainer = async ({ params }: Props) => {
   const { id } = await params;
 

@@ -5,6 +5,8 @@ import TodoInput from "../input/TodoInput";
 import Create from "../todoButton/Create";
 import { useTransition } from "react";
 
+// 투두를 생성하는 form
+
 const AddTodo = () => {
   const [isPending, startTransition] = useTransition();
 

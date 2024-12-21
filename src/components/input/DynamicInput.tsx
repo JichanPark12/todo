@@ -6,6 +6,8 @@ interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
   value: string;
 }
 
+// 길이가 동적으로 변하는 input
+
 export const DynamicInput = ({ value, ...props }: Props) => {
   const [inputValue, setInputValue] = useState(value);
   const spanRef = useRef<HTMLSpanElement>(null);

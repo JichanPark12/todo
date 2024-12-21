@@ -18,6 +18,8 @@ const RWD_SIZE_MAP: { [k in Props["size"]]: string } = {
   SM: "w-[56px] h-[56px]",
 };
 
+//기본적인 투두 버튼 디자인 반응형 여부와 사이즈 사용할 색을 지정하면 그에맞는 버튼이 나옵니다.
+
 const TodoButton = ({
   size,
   color,

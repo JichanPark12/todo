@@ -9,6 +9,8 @@ interface Props {
   imageUrl: string;
 }
 
+//이미지를 업로드하고 응답받은 url로 미리보기를 보여주는 컴포넌트트
+
 const TodoImage = ({ imageUrl }: Props) => {
   const [uploadImg, setUploadImg] = useState<string>(imageUrl);
 

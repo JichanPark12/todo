@@ -19,11 +19,6 @@ const TodoName = ({ id, name, isCompleted }: Props) => {
         value={name}
         placeholder="할 일을 입력해주세요"
       />
-      {/* <input
-        name="name"
-        className="ml-[16px] font-bold text-xl  outline-none "
-        defaultValue={name}
-      ></input> */}
     </div>
   );
 };
